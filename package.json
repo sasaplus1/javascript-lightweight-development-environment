@@ -1,3 +1,17 @@
 {
-  "private": true
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true
+    },
+    "extends": "eslint:recommended",
+    "root": true
+  },
+  "private": true,
+  "scripts": {
+    "eslint": "eslint",
+    "lint": "npm run eslint -- ."
+  }
 }
