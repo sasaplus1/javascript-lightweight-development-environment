@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "eslint": "^3.19.0"
+    "eslint": "^3.19.0",
+    "fixpack": "^2.3.1"
   },
   "eslintConfig": {
     "env": {
@@ -12,6 +13,7 @@
   "private": true,
   "scripts": {
     "eslint": "eslint",
+    "fixpack": "fixpack",
     "lint": "npm run eslint -- ."
   }
 }
