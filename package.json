@@ -1,4 +1,12 @@
 {
+  "browserslist": {
+    "development": [
+      "last 2 versions"
+    ],
+    "production": [
+      "last 1 versions"
+    ]
+  },
   "devDependencies": {
     "eslint": "^3.19.0",
     "fixpack": "^2.3.1"
