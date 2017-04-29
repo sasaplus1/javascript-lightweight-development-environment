@@ -32,6 +32,15 @@
     "extends": "eslint:recommended",
     "root": true
   },
+  "postcss": {
+    "local-plugins": true,
+    "map": false,
+    "parser": "scss",
+    "plugins": {
+      "autoprefixer": {}
+    },
+    "syntax": "postcss-scss"
+  },
   "private": true,
   "scripts": {
     "eslint": "eslint",
