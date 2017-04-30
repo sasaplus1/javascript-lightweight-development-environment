@@ -71,6 +71,7 @@
     "compile": "npm run webpack",
     "develop": "npm run webpack -- --devtool inline-source-map --watch",
     "eslint": "eslint",
+    "export": "git archive --worktree-attributes HEAD | tar x - -C",
     "fixpack": "fixpack",
     "lint": "npm run eslint -- .",
     "minify": "NODE_ENV=production npm run webpack -- --optimize-minimize",
