@@ -1,7 +1,8 @@
 {
   "devDependencies": {
     "eslint": "^3.19.0",
-    "fixpack": "^2.3.1"
+    "fixpack": "^2.3.1",
+    "webpack": "^2.4.1"
   },
   "eslintConfig": {
     "env": {
@@ -12,8 +13,12 @@
   },
   "private": true,
   "scripts": {
+    "compile": "npm run webpack",
+    "develop": "npm run webpack -- --devtool inline-source-map --watch",
     "eslint": "eslint",
     "fixpack": "fixpack",
-    "lint": "npm run eslint -- ."
+    "lint": "npm run eslint -- .",
+    "minify": "NODE_ENV=production npm run webpack -- --optimize-minimize",
+    "webpack": "webpack --colors --display-error-details --progress"
   }
 }

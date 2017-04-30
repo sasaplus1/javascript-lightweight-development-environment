@@ -1,3 +1,9 @@
+src/*
+!src/.gitkeep
+
+dest/*
+!dest/.gitkeep
+
 ### https://raw.github.com/github/gitignore/f1eba3434761ebb9630fb0048500552f3405da03/Node.gitignore
 
 # Logs
