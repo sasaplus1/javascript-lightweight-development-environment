@@ -1,5 +1,60 @@
 {
+  "babel": {
+    "env": {
+      "development": {
+        "presets": [
+          [
+            "env",
+            {
+              "loose": true,
+              "targets": {
+                "browsers": [
+                  "last 2 Chrome versions",
+                  "last 2 Edge versions",
+                  "Explorer >= 9",
+                  "last 2 Firefox versions",
+                  "last 2 Safari versions",
+                  "iOS >= 9",
+                  "Android >= 4.4",
+                  "last 2 ChromeAndroid versions"
+                ]
+              }
+            }
+          ]
+        ]
+      },
+      "production": {
+        "presets": [
+          [
+            "env",
+            {
+              "loose": true,
+              "targets": {
+                "browsers": [
+                  "last 2 Chrome versions",
+                  "last 2 Edge versions",
+                  "Explorer >= 9",
+                  "last 2 Firefox versions",
+                  "last 2 Safari versions",
+                  "iOS >= 9",
+                  "Android >= 4.4",
+                  "last 2 ChromeAndroid versions"
+                ]
+              }
+            }
+          ]
+        ],
+        "plugins": [
+          "lodash"
+        ]
+      }
+    }
+  },
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-preset-env": "^1.4.0",
     "eslint": "^3.19.0",
     "fixpack": "^2.3.1",
     "webpack": "^2.4.1"

@@ -5,6 +5,17 @@ const webpack = require('webpack');
 module.exports = function(env) {
   const baseConfig = {
     context: __dirname,
+    module: {
+      rules: [
+        {
+          exclude: /node_modules/,
+          test: /.js$/,
+          use: [
+            { loader: 'babel-loader' },
+          ],
+        },
+      ],
+    },
     output: {
       chunkFilename: 'chunk-[id]-[hash].js',
       filename: '[name].js',
